@@ -1,0 +1,8 @@
+{
+  "name": "Weathered",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

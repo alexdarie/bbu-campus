@@ -1,0 +1,30 @@
+\chapter*{Introduction}
+\pagestyle{fancy}
+\markboth{INTRODUCTION}{}
+\addcontentsline{toc}{chapter}{Introduction}
+\label{introduction}
+
+The rise of lightweight (wearable) sensors, data describing human activities, open up new scenarios for fascinating challenges in the field of data science. In classical statistics, the belief is that there is some true underlying shape to the data distribution that would be formed if all possible data was collected \cite{ACL}. In every part of our lives, we made our best guesses about what is the most likely data distribution that will improve life quality. How often have we tried to outperform our washing machine? Even though we have one for a long period of time, we never doubt the internal decisions it makes, even though sometimes we want a smarter washing machine.
+
+Throughout the paper we investigate related work, software engineering tools and architectural decisions that constitute the ground base for a mobile application that helps ordinary people and athletes alike better understand the implications of weather on their fitness habits. Arguably one of the decisions that most influenced the project was starting from the concept of data streams, coupled with a distributed system. The application benefits of a persistence layer capable of retraining a series of statistical models in a real-time fashion and a robust layer that facilitates the transport of messages between machines. We would never got so far without building a weather monitor from scratch, using additive manufacturing, more commonly known as 3D printing, as a quick and low cost alternative to the more traditional manufacturing techniques to build data source points. This project also involved open-source electronics and edge computing, both coming from the United Kingdom, namely Pimoroni and Raspberry Pi.
+
+Data mining techniques can be used for either discovering new information within large datasets or for building predictive models. The nature of data produced by a sensor imposes additional burdens on data processing frameworks, with one great solution found in the concept of streaming systems - a type of data processing engine that is designed with infinite datasets in mind \cite{KurtThearling}. Allowing a machine to find patterns in our everyday life will help the average person make better decisions by approximating the risk and uncertainty when all the facts are either unknown or cannot be collected. 
+
+Modelling is simply the act of building a model in one situation where you know the answer and then applying it to another situation that you don't \cite{KurtThearling}.  While human beings have successfully developed models born from very humble beginnings of real-world problems such as business, biology and gambling, natural events are still unpredictable if the underlying data comes from our limited and very biased memory.
+
+We can think of a person asking herself if she should jog outside, but even if she checked the weather, it was not conclusive in making a decision because we cannot precisely decide whether the weather suits her activities or not. She is unsure of how running at a given temperature and dark surroundings would feel. Making her understand better her patterns or predisposition of having certain activities in a data described environment, rather than one based on common preconceptions, can improve her health, reduce material waste and make us more responsible.
+
+Habits are defined in terms of frequency of behavior, things that we all do without being aware of the implications or their roots. An average person cannot keep track of all the data in their head. Our awareness of the outside world we live in, relies on the perception we were born with - limited in some ways, and not fully understood yet in other ways. Despite the quantity of information we gather, in regards with people's surroundings, the questions they ask are disjoint. The open question is how do we harness the knowledge hidden in plain sight, among data reflecting our behaviours. Today, intelligent virtual assistance is a popular topic, with more and more people preferring to complement their instincts with computer recommendations.
+
+In the following chapters we monitored the weather is influencing our athletic habits, collecting data from fitness trackers and custom built devices. The problem statement as we see resembles with other challenging tasks that can have a benefit out of the following solution, such as spontaneous forest fires and deforestation, biodiversity growth and monitorization while species are on the verge of extinction, tracking polluting agents, agricultural yield, supply chains and logistics optimization in food industries, town traffic and green spaces optimization, improving energy consumption and use of renewable energy and many more. 
+
+Although different in nature, these challenges can be approached in a similar fashion, and we want to start with a problem whose data can be obtained more easily that the ones previously enumerated. Data collected from the weather station was made available for further research. If we were to summarize the features of the application, we wound state them as follows: 
+\begin{itemize}
+    \item{predict certain habits like preferred weather condition, or activity duration}
+    \item{compare ideal weather conditions to the current ones}
+    \item{visualize real-time weather measurements and the last 24 hours}
+    \item{show recent activities and past reports}
+\end{itemize}
+
+As health and fitness play a vital role in people's life, having a better understanding when it comes to our patterns, in accordance with the weather, makes a great context of study. The most important theoretical aspects were covered in chapter 1, while the related work and the proposed approach were discussed in chapters 2 and 3. As a conclusion, in the last chapter we propose future directions, improvements, and state the achievements.
+

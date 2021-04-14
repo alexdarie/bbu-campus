@@ -1,0 +1,2 @@
+function table = divDifDouble(nodes, values, derivatives)  n = 2 * length(nodes);  table = NaN(n);  doubleNodes = repelem(nodes, 2);  table(:, 1) = repelem(values, 2);  table(1:2:end-1,2) = derivatives;  table(2:2:end-2,2) = diff(values)'./diff(nodes)';  for j=3:n    for i=1:n-j+1      table(i, j) = (table(i+1, j-1) - table(i, j-1)) / (doubleNodes(i+j-1)-doubleNodes(i));    endfor  endfor
+endfunction
