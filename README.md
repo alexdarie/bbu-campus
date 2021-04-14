@@ -1,1 +1,1 @@
-# university
+# BBU, Computer Science Department
