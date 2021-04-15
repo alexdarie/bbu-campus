@@ -1,0 +1,1 @@
+## Documents arrive at a printer, on average, every 45 seconds. Conduct a Monte ## Carlo study to estimate:#### a. the probability of at least 10 printing jobs arrive in the next 9 minutes## b. the average number of printing jobs that arrive in the next 9 minutes.## Compare your results with the exact values.

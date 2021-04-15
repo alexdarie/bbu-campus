@@ -1,0 +1,1 @@
+## A software package consists of 15 files. The download of each file is a rare ## event that occurs at the rate of 2per minute. Conduct a Monte Carlo study to ## estimate:## ## a. the probability that it takes at least 6 minutes to download the entire package## b.the expected download time (in minutes) for the entire package## Compare your results with the exact values.

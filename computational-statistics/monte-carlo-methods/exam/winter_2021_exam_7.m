@@ -1,0 +1,1 @@
+## Printing jobs arriving at a printer are rare events that occur at the rate ## of 3 per minute. Conduct a MonteCarlo study to estimate:#### a. the probability that at least 25 seconds pass between printing two consecutive ## documents## b. the expected time (in seconds) between printing two consecutive documents.## Compare your results with the exact values.

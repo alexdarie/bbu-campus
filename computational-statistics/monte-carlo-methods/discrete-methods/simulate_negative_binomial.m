@@ -1,0 +1,2 @@
+function A = simulate_negative_binomial(num_simul, num_trials, p)  for s = 1 : num_simul    ## A negative binomial variable is the sum of n geometric variables, because    ## we want to simulate the number of trials needed until reaching r successes.    for i = 1 : num_trials      trials_until_r_successes(i) = 0;      while rand >= p        trials_until_r_successes(i) = trials_until_r_successes(i) + 1;      endwhile    endfor        ## Sum up the number of trials needed to reach r in this simulation.    A(s) = sum(trials_until_r_successes);  endfor
+endfunction

@@ -1,0 +1,1 @@
+function A = ditm_sh_geometric(p)  A = ceil(log(1 - rand)/log(1-p));endfunction

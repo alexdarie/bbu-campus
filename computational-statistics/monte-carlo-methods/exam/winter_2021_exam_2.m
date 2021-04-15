@@ -1,0 +1,1 @@
+## A vaccine against a certain virus meets specifications with probability 0.9.## Conduct a Monte Carlo study to estimate.## ## a. the probability that 5 vaccines have to be tested to find three that meet specifications## b. the expected number of defective vaccines discovered before the third good one is found## Compare your results with the exact values.

@@ -1,0 +1,1 @@
+## Messages arrive at an electronic message center at random times, 1 message ## every 6 minutes. Conduct aMonte Carlo study to estimate:#### a. the probability of receiving at least 5 messages during the next hour;## b. the average number of messages received in one hour## Compare your results with the exact values.
