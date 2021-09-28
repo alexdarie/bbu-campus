@@ -1,6 +1,6 @@
 ## Genealogic tree
 
-Below is an example of searching for someones grandparents.
+An example of searching for someone's grandparents.
 ```
 | ?- parent(P, ioana), parent(GP, P).
 
