@@ -27,7 +27,7 @@ otherwise, if it fails you can run
 docker pull swipl
 ```
 
-## Install on MacOS
+## Prolog on MacOS
 
 ```
 me$ brew install gnu-prolog
