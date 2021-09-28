@@ -1,3 +1,3 @@
 # BBU, Computer Science Department
 
-Current status: all files need a clean up
+Sorry, it's a mess! Try finding what you need.
