@@ -1,4 +1,4 @@
-## Installation using Docker
+## Prolog using Docker
 
 SWI-Prolog is a versatile implementation of the Prolog language. If you type `run -it swipl`, it should automatically pull the latest image
 
