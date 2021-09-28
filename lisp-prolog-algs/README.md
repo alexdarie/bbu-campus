@@ -51,7 +51,7 @@ compiling /Users/alexdarie/GitHub/f/schedule.pl for byte code...
 | ?-
 ```
 
-## Compile your Prolog applications
+## Prolog app compilation
 
 ```
 ?- ['/Users/alexdarie/GitHub/f/laboratory1.14.pl'].
