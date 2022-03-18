@@ -1,0 +1,259 @@
+$noto-font: 'Noto Sans Avestan', sans-serif;
+
+p {
+    font-size: 16px;
+}
+
+.article-body {
+    margin: 0 20vw 0 20vw; 
+}
+
+.author {
+    font-size: 13px;
+    color: gray;
+    font-family: $noto-font;
+}
+
+.article-images {
+    // min-width: 350px;
+    margin-right: auto;
+}
+
+.article-media {
+    margin: auto;
+}
+
+.card-subtitle-light-white {
+    font-family: $noto-font;
+    color: rgb(201, 201, 201);
+}
+
+.card-title {
+    font-size: 20px;
+    font-family: interstate, sans-serif;
+    font-weight: 530;
+}
+
+.card-content {
+    font-family: nimbus-sans, sans-serif;
+    color: gray;
+    line-height: 14pt;
+}
+
+.footer-font {
+    font-family: coolvetica, sans-serif;
+  }
+
+.parallax {
+    height: 75vh; 
+
+    // Creates the parallax scrolling effect:
+    // Warning: background-attachment: fixed; creates problems in Safari
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ion-toolbar {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.site-title {
+    margin: 2px 0 0 1vw;
+    height: 30px;
+}
+
+.posts-centered-container {
+    margin: 30px 10vw 30px 10vw;
+    background-color: white;
+}
+
+.did-not-give{
+    color: grey;
+}
+
+.gave{
+    color: rgb(252, 186, 3);
+}
+
+ion-progress-bar {
+    margin-left: 3px;
+    border-radius: 5px;
+    height: 10px;
+    --progress-background: rgb(252, 186, 3);
+    width: 15vw;
+    min-width: 120px;
+}
+
+.rounded-corners {
+    border-radius: 5px;
+}
+
+.feedback {
+    margin-left: 1vw;
+}
+
+.recent-posts {
+    padding-top: 10px; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+    font-family: interstate, sans-serif; 
+    font-size: 20px;
+}
+
+.recent-posts-container {
+    margin-bottom: 2vh;
+}
+
+.column-padding {
+    padding: 15px 10px 15px 10px;
+}
+
+.inner-column-padding {
+    padding: 20px 15px 20px 15px;
+}
+
+.article-recent-posts {
+    margin: 0 5vw 0 5vw; 
+}
+
+.article-story {
+    padding: 0 15px 0 0;
+}
+
+.recent-posts-images {
+    border-radius: 5px;
+}
+
+.nimbus-font {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 15pt;
+    font-family: nimbus-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (min-width: 2000px) {
+    .posts-centered-container {
+      margin: 30px 20vw 30px 20vw;
+    }
+}
+  
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 2000px) {  
+    ion-toolbar {
+      padding-left: 7vw;
+      padding-right: 8vw;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .column-padding {
+        padding: 10px 5px 10px 5px;
+    }
+    
+    .inner-column-padding {
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .article-body {
+        margin: 0 10vw 0 10vw; 
+    }
+
+    .article-body-lg {
+        margin: 0 10vw 0 10vw; 
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    ion-toolbar {
+      padding-left: 0vw;
+      padding-right: 1vw;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .posts-centered-container {
+        margin: 30px 2vw 30px 2vw;
+    }
+
+    .article-body {
+        margin: 0 3vw 0 3vw; 
+    }
+
+    .article-body-lg {
+        margin: 0 3vw 0 3vw; 
+    }
+
+    // .parallax {
+    //     height: 35vh;
+    // }
+}
+
+@media screen and (max-width: 950px) {
+    .posts-centered-container {
+        margin: 30px 0.5vw 30px 0.5vw;
+    }
+
+    .contact-last-col {
+        max-width: 5vw;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .inner-feedback {
+        margin-left: auto;
+        margin-right: 1vw;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .article-body {
+        margin: 0 1vw 0 1vw; 
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .media {
+        min-width: auto;
+    }
+    
+    .site-title {
+        //   margin-left: -10px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .textual {
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .site-title {
+        // margin-left: -10px;
+        font-size: 27px;
+    }
+  
+    .card-title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .site-title {
+        // margin-left: -10px;
+        font-size: 26px;
+    }
+}

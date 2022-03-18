@@ -1,0 +1,114 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-text>
+      <button routerLink='/home' style="background-color: transparent; border: none; outline:none;">
+        <img class="site-title" [src]="logoImage"/>
+      </button>
+    </ion-text>
+    <ion-buttons slot="end" class="toolbar-buttons">
+      <ion-button href="https://www.instagram.com/_alexdarie/" target="_blank">
+        <ion-icon class="white-icons" slot="icon-only" ios="logo-instagram" md="logo-instagram"></ion-icon>
+      </ion-button>
+      <ion-button href="https://github.com/alexdarie" target="_blank">
+        <ion-icon class="white-icons" slot="icon-only" name="logo-github"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content overflow-scroll="true">
+  <ion-row>
+    <ion-col style="padding: 0">
+      
+      <div class="parallax" [style.background-image]="article.poster">
+      </div>
+
+      <ion-grid class="article-body">
+
+        <ion-row class="article-media">
+          <p style="margin: 1.1vh;"></p>
+        </ion-row>
+        
+        <ion-row class="article-media">
+          <ion-col size-xl="5.5" push-xl="0.5" size-lg="5.5" push-lg="0.5" size-md="5.5" push-md="0.5" size-sm="10" push-sm="1" size-xs="11" push-xs="0.5" class="article-story">
+            <div>
+              <h1 style="margin-bottom: 15px; font-family: coolvetica, sans-serif;">
+                {{article.title}}
+              </h1>
+              <ion-row style="margin: -25px 0 0 0;">
+                <p class="author" style="font-family: coolvetica, sans-serif;">{{article.readTime}} minute read</p>
+              </ion-row>
+            </div>
+            <div *ngFor="let rule of objectValues(article.content.rules)">
+              <div *ngIf="rule['content'] === 'paragraph'"> 
+                <div class="nimbus-font" *ngFor="let index of rule['indexes']" innerHtml="{{article.content.paragraphs[index]}}"></div>
+              </div>
+            </div>
+          </ion-col>
+          <ion-col size-xl="5.5" push-xl="0.5" size-lg="5.5" push-lg="0.5" size-md="5.5" push-md="0.5" size-sm="10" push-sm="1" size-xs="11" push-xs="0.5" class="article-images">
+            <div *ngFor="let rule of objectValues(article.content.rules)">
+              <div *ngIf="rule['content'] === 'slider'">
+                <ion-slides pager="true" [options]="slideOpts">
+                  <ion-slide *ngFor="let index of rule['indexes']">
+                    <img style="margin: auto;" src={{article.media.picture[index]}}>
+                  </ion-slide>
+                </ion-slides>
+              </div>
+            </div> 
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="feedback">
+          <!-- <ion-list lines="none" class="inner-feedback">
+            <ion-item>
+              <ion-buttons slot="end">
+                <ion-button (click)="react('energy')" [disabled]="disableReactions">
+                  <ion-icon class="did-not-give" slot="icon-only" ios="flash" md="flash" [ngClass]="{'gave': gaveEnergy}"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+              <ion-progress-bar tooltip="test" slot="end" value="{{postFeedbackProgress}}"></ion-progress-bar>
+            </ion-item>
+          </ion-list> -->
+        </ion-row>
+
+        <ion-row class="article-recent-posts">
+          <p class="recent-posts"><span style="color: gray">Recent</span> posts</p>
+        </ion-row>
+
+        <ion-row class="recent-posts-container">
+          <ion-col class="column-padding" size-xl="3" push-xl="1.5" size-lg="3.5" push-lg="0.5" size-md="4" push-md="0" size-sm="4" push-sm="0" size-xs="10" push-xs="1" *ngFor="let article of articles.popular.slice(0, howMany)">
+            <ion-item lines="none" [routerLink]="['/article', article.category, article.id]" class="rounded-corners">
+              <ion-col class="inner-column-padding">
+                <img class="recent-posts-images" src={{article.media.square}} />
+                <ion-card-header>
+                  <ion-card-title class="card-title" style="margin: 0; font-size: 16.5px;">{{article.title}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="card-content">
+                  <div> {{article.content.header.substring(0, 300)}}..</div>
+                </ion-card-content>
+              </ion-col>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </ion-col>
+  </ion-row>
+
+  <ion-footer style="background-color: black">
+    <ion-grid>
+      <ion-row class="posts-centered-container" style="background-color: black; color: white">
+        <ion-col style="margin-left: 5vw;">
+          <p class="card-subtitle-light-white footer-font">Alex Darie</p>
+        </ion-col>
+        <ion-col class="card-subtitle-light-white footer-font">
+          <p>I've been coding this for a while now, using <ion-icon name="logo-ionic"></ion-icon>, <ion-icon name="heart"></ion-icon>, namecheap, and <ion-icon name="logo-firebase"></ion-icon>.<br>
+          <p>The fastest (and most reliable) way to reach me is on Instagram: </p>
+          <p><a href="https://www.instagram.com/_alexdarie/" style="color: white">instagram.com/alexdarie</a></p>
+        </ion-col>
+        <ion-col class="contact-last-col"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+</ion-content>
