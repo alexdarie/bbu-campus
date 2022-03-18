@@ -1,3 +1,3 @@
-## Babeș-Bolyai University, CS Department
+## CS Department
 
-Sorry, it's a mess! Try finding what you need.
+Find what you need, take what you may.
